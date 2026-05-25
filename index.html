@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Product Mix | Temario</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero">
+      <div class="hero__content">
+        <span class="eyebrow">CS Gestion de ventas y espacios comerciales</span>
+        <h1>Test de repaso Product Mix</h1>
+        <p>Preguntas sacadas del temario de las paginas 3 a 17: producto, marca, naming, branding, registro, ciclo de vida y adopcion.</p>
+        <div class="hero__actions">
+          <button class="btn btn--primary" id="startBtn" type="button">Empezar test</button>
+          <button class="btn btn--ghost" id="shuffleBtn" type="button">Mezclar preguntas</button>
+        </div>
+      </div>
+      <aside class="hero__panel" aria-label="Resumen del test">
+        <div>
+          <span class="panel-label">Modo examen</span>
+          <strong id="totalQuestions">0</strong>
+          <small>preguntas especificas</small>
+        </div>
+        <div class="mini-stats">
+          <span>V/F</span>
+          <span>4 opciones</span>
+          <span>Correccion inmediata</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="toolbar" aria-label="Controles del test">
+      <div class="progress-card">
+        <div class="progress-card__top">
+          <span id="progressText">Pregunta 1 de 1</span>
+          <strong id="scoreText">0 aciertos</strong>
+        </div>
+        <div class="progress-bar" aria-hidden="true">
+          <span id="progressFill"></span>
+        </div>
+      </div>
+
+      <div class="filters" role="group" aria-label="Tipo de preguntas">
+        <button class="filter is-active" data-filter="all" type="button">Todo</button>
+        <button class="filter" data-filter="vf" type="button">V/F</button>
+        <button class="filter" data-filter="multi" type="button">4 opciones</button>
+      </div>
+    </section>
+
+    <section class="quiz-card" id="quizCard" aria-live="polite">
+      <div class="question-meta">
+        <span id="questionTopic">Tema</span>
+        <span id="questionType">Tipo</span>
+      </div>
+
+      <h2 id="questionText">Cargando pregunta...</h2>
+
+      <div class="answers" id="answers"></div>
+
+      <div class="feedback" id="feedback" hidden>
+        <strong id="feedbackTitle"></strong>
+        <p id="feedbackText"></p>
+      </div>
+
+      <div class="nav-row">
+        <button class="btn btn--ghost" id="prevBtn" type="button">Anterior</button>
+        <button class="btn btn--primary" id="nextBtn" type="button">Siguiente</button>
+      </div>
+    </section>
+
+    <section class="result-card" id="resultCard" hidden>
+      <span class="eyebrow">Resultado final</span>
+      <h2 id="resultTitle">Test completado</h2>
+      <div class="result-grid">
+        <div>
+          <strong id="rightCount">0</strong>
+          <span>Buenas</span>
+        </div>
+        <div>
+          <strong id="wrongCount">0</strong>
+          <span>Equivocadas</span>
+        </div>
+        <div>
+          <strong id="percentCount">0%</strong>
+          <span>Nota</span>
+        </div>
+      </div>
+      <p id="resultAdvice"></p>
+      <div class="wrong-review" id="wrongReview" hidden>
+        <h3>Preguntas para repasar</h3>
+        <div id="wrongList"></div>
+      </div>
+      <div class="hero__actions">
+        <button class="btn btn--primary" id="retryWrongBtn" type="button">Repasar falladas</button>
+        <button class="btn btn--ghost" id="restartBtn" type="button">Reiniciar completo</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
