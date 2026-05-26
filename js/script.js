@@ -422,17 +422,311 @@ const questionBank = [
   }
 ];
 
+const extraQuestions = [
+  {
+    type: "vf",
+    topic: "Atributos del producto",
+    question: "El precio puede considerarse un atributo del producto dentro de la oferta comercial.",
+    options: ["Verdadero", "Falso"],
+    correct: 0,
+    explanation: "El temario incluye el precio entre los atributos que forman parte de la oferta comercial."
+  },
+  {
+    type: "multi",
+    topic: "Atributos del producto",
+    question: "El packaging aporta funciones relacionadas con...",
+    options: ["Proteccion, transporte, informacion y promocion.", "Registro legal, demanda y cuota de mercado.", "Solo financiacion y forma de pago.", "Exclusivamente servicio postventa."],
+    correct: 0,
+    explanation: "La presentacion del producto incluye envase, embalaje y etiqueta con funciones de proteccion, transporte, informacion y promocion."
+  },
+  {
+    type: "vf",
+    topic: "Atributos del producto",
+    question: "La calidad es solo un atributo tecnico y nunca psicologico.",
+    options: ["Verdadero", "Falso"],
+    correct: 1,
+    explanation: "El temario apunta que la calidad puede ser atributo tecnico, pero tambien psicologico."
+  },
+  {
+    type: "multi",
+    topic: "Dimensiones del producto",
+    question: "El producto generico de Levitt se refiere a...",
+    options: ["La satisfaccion de las necesidades fundamentales buscadas por el comprador.", "Las mejoras futuras todavia no incorporadas.", "La marca colectiva de una asociacion.", "La clasificacion internacional de productos."],
+    correct: 0,
+    explanation: "En Levitt, el producto generico satisface las necesidades fundamentales buscadas por el comprador."
+  },
+  {
+    type: "multi",
+    topic: "Dimensiones del producto",
+    question: "El producto esperado recoge...",
+    options: ["Beneficios y experiencias que el comprador considera habituales al comprar.", "Solo el recorrido futuro de la oferta.", "La fase de declive del producto.", "La proteccion registral de la marca."],
+    correct: 0,
+    explanation: "Producto esperado son los beneficios y experiencias que el comprador considera normales o habituales."
+  },
+  {
+    type: "vf",
+    topic: "Clases de productos",
+    question: "Los bienes de compra esporadica requieren mas informacion y comparaciones que los de conveniencia.",
+    options: ["Verdadero", "Falso"],
+    correct: 0,
+    explanation: "El temario los define por un mayor esfuerzo de compra, busqueda de informacion y comparaciones."
+  },
+  {
+    type: "multi",
+    topic: "Clases de productos",
+    question: "Los bienes de preferencia se caracterizan porque el comprador...",
+    options: ["Esta dispuesto a hacer un esfuerzo de compra por caracteristicas concretas.", "Los compra siempre sin comparar.", "Solo los compra por emergencia.", "Los usa exclusivamente en procesos industriales."],
+    correct: 0,
+    explanation: "En los bienes de preferencia el comprador acepta mayor esfuerzo porque valora unas caracteristicas determinadas."
+  },
+  {
+    type: "vf",
+    topic: "Clases de productos",
+    question: "Servicios e ideas forman parte de los productos intangibles.",
+    options: ["Verdadero", "Falso"],
+    correct: 0,
+    explanation: "El temario agrupa servicios e ideas dentro de los intangibles."
+  },
+  {
+    type: "multi",
+    topic: "Gama y linea",
+    question: "Una mayor variedad de gama puede aumentar el alcance de mercado porque...",
+    options: ["Permite llegar a una audiencia mayor y aumentar la cuota.", "Impide vender otros productos de la misma empresa.", "Reduce siempre la productividad.", "Elimina la necesidad de posicionamiento."],
+    correct: 0,
+    explanation: "El temario relaciona gama amplia con mayor audiencia, cuota y probabilidad de compras cruzadas."
+  },
+  {
+    type: "vf",
+    topic: "Gama y linea",
+    question: "La gama puede ser un elemento de diferenciacion y posicionamiento.",
+    options: ["Verdadero", "Falso"],
+    correct: 0,
+    explanation: "La gama disponible puede afectar a como se percibe la organizacion frente a la competencia."
+  },
+  {
+    type: "multi",
+    topic: "Gama y linea",
+    question: "Diversificar riesgo mediante gama significa que...",
+    options: ["Si una linea no funciona, otras pueden compensar.", "Todas las lineas dependen siempre del mismo resultado.", "Solo se vende un unico producto.", "Se renuncia a la cartera."],
+    correct: 0,
+    explanation: "Varias lineas permiten repartir el riesgo y no depender de un unico producto."
+  },
+  {
+    type: "multi",
+    topic: "Diferenciacion",
+    question: "Para que la diferenciacion sea eficaz, la diferencia debe...",
+    options: ["Aportar algun beneficio y ser percibida por compradores o usuarios.", "Ser invisible para la competencia y el cliente.", "Basarse siempre en reducir garantia.", "Eliminar la marca para evitar confusion."],
+    correct: 0,
+    explanation: "El temario insiste en que la diferencia debe aportar beneficio y ser percibida y apreciada."
+  },
+  {
+    type: "vf",
+    topic: "Diferenciacion",
+    question: "La reaccion de la competencia hace aconsejable aprovechar rapidamente una ventaja competitiva.",
+    options: ["Verdadero", "Falso"],
+    correct: 0,
+    explanation: "El temario recomienda aprovechar rapido la ventaja por la posible reaccion de la competencia."
+  },
+  {
+    type: "multi",
+    topic: "Marca",
+    question: "El nombre o logotipo de una marca debe ser...",
+    options: ["Facil de recordar y pronunciar, agradable, inconfundible y sugerente.", "Dificil de leer para que parezca exclusivo.", "Temporal y sin valores positivos.", "Igual a marcas ya existentes."],
+    correct: 0,
+    explanation: "El temario pide facilidad de recuerdo y pronunciacion, sonoridad agradable, claridad y valores positivos."
+  },
+  {
+    type: "vf",
+    topic: "Marca",
+    question: "La marca no es estatica: puede ir cargandose de atributos con el tiempo.",
+    options: ["Verdadero", "Falso"],
+    correct: 0,
+    explanation: "En el apartado de marca se indica que se va cargando de atributos y no permanece estatica."
+  },
+  {
+    type: "multi",
+    topic: "Marca",
+    question: "Una marca colectiva identifica productos pertenecientes a...",
+    options: ["Una asociacion de fabricantes u oferentes.", "Un solo producto privado.", "Una fase de adopcion.", "Un canal de distribucion en declive."],
+    correct: 0,
+    explanation: "La marca colectiva identifica y diferencia productos vinculados a una asociacion."
+  },
+  {
+    type: "vf",
+    topic: "Postventa",
+    question: "Cuando no es posible implementar postventa, la gama puede cumplir parte de esa funcion mediante productos complementarios.",
+    options: ["Verdadero", "Falso"],
+    correct: 0,
+    explanation: "El temario explica que, si no hay postventa posible, la gama y los complementarios pueden ayudar a mantener relacion."
+  },
+  {
+    type: "multi",
+    topic: "Postventa",
+    question: "La postventa permite a la organizacion estar al tanto de...",
+    options: ["Reacciones, quejas y satisfaccion del cliente.", "Solo la legislacion de marcas.", "Unicamente el coste de fabricacion.", "La matriz de decision del naming."],
+    correct: 0,
+    explanation: "Los servicios postventa facilitan seguimiento, escucha de quejas y medicion de satisfaccion."
+  },
+  {
+    type: "vf",
+    topic: "Naming",
+    question: "Un nombre de marca debe evitar asociaciones y connotaciones negativas.",
+    options: ["Verdadero", "Falso"],
+    correct: 0,
+    explanation: "El temario destaca que debe ser registrable y no llevar a asociaciones negativas."
+  },
+  {
+    type: "multi",
+    topic: "Naming",
+    question: "En el proceso de naming, usar un semaforo significa...",
+    options: ["Clasificar alternativas en rojo, naranja y verde segun cercania a lo buscado.", "Registrar la marca en tres paises.", "Medir madurez, crecimiento y declive.", "Separar productos tangibles e intangibles."],
+    correct: 0,
+    explanation: "El semaforo ayuda a descartar opciones alejadas y priorizar las mas cercanas a los atributos buscados."
+  },
+  {
+    type: "vf",
+    topic: "Naming",
+    question: "El naming es un proceso con parte consciente y parte no consciente.",
+    options: ["Verdadero", "Falso"],
+    correct: 0,
+    explanation: "El temario lo describe como actividad creativa con conduccion consciente y componentes no conscientes."
+  },
+  {
+    type: "multi",
+    topic: "Branding",
+    question: "Branding y naming se separan en el temario porque...",
+    options: ["Naming trabaja la carga sonora y de lectura; branding la carga visual.", "Branding solo estudia precios y naming solo distribucion.", "Naming es legal y branding industrial.", "Ambos son fases del ciclo de vida del producto."],
+    correct: 0,
+    explanation: "El temario diferencia el peso verbal del naming y la comunicacion visual del branding."
+  },
+  {
+    type: "vf",
+    topic: "Branding",
+    question: "El branding puede entenderse tambien como gestion de marca, mas alla de crear su parte visual.",
+    options: ["Verdadero", "Falso"],
+    correct: 0,
+    explanation: "El temario menciona corrientes que incluyen en branding la gestion de marca, de ahi el brand manager."
+  },
+  {
+    type: "multi",
+    topic: "Registro y proteccion",
+    question: "El derecho de prioridad en marcas significa que...",
+    options: ["La solicitud registra dia, hora y minuto; quien llega primero tiene derecho.", "La marca mas cara se concede primero.", "Solo cuenta el pais de origen.", "Se elige por sorteo entre solicitantes."],
+    correct: 0,
+    explanation: "El temario indica que la solicitud registra fecha y hora de entrada, generando prioridad."
+  },
+  {
+    type: "vf",
+    topic: "Registro y proteccion",
+    question: "Las marcas tienen frontera y su utilizacion se limita al territorio donde se registran.",
+    options: ["Verdadero", "Falso"],
+    correct: 0,
+    explanation: "La proteccion de la marca se vincula al territorio solicitado o registrado."
+  },
+  {
+    type: "multi",
+    topic: "Registro y proteccion",
+    question: "La concesion de una marca esta sujeta a...",
+    options: ["Un periodo de informacion publica para reclamaciones o alegaciones.", "Una fase de prueba de producto en pequena escala.", "Unicamente una decision comercial interna.", "La aceptacion de todos los competidores."],
+    correct: 0,
+    explanation: "El temario menciona un periodo de informacion publica donde terceros pueden formular alegaciones."
+  },
+  {
+    type: "multi",
+    topic: "Ciclo de vida",
+    question: "En crecimiento, normalmente...",
+    options: ["Aumentan ventas, bajan costes por venta y empiezan beneficios.", "La oferta supera siempre la demanda.", "Solo se retienen clientes fieles.", "No se buscan distribuidores."],
+    correct: 0,
+    explanation: "En crecimiento aumenta el mercado, aparecen compradores y operadores, bajan costes y comienzan beneficios."
+  },
+  {
+    type: "vf",
+    topic: "Ciclo de vida",
+    question: "En introduccion los ingresos suelen no cubrir los costes.",
+    options: ["Verdadero", "Falso"],
+    correct: 0,
+    explanation: "Durante introduccion hay pocas ventas e inversion, por lo que los ingresos no cubren costes."
+  },
+  {
+    type: "multi",
+    topic: "Ciclo de vida",
+    question: "En madurez, los beneficios...",
+    options: ["Alcanzan su nivel maximo e incluso pueden empezar a disminuir.", "No existen nunca.", "Siempre crecen sin limite.", "Solo aparecen tras retirar el producto."],
+    correct: 0,
+    explanation: "El temario indica que en madurez los beneficios alcanzan maximo y pueden comenzar a bajar."
+  },
+  {
+    type: "multi",
+    topic: "Proceso de adopcion",
+    question: "La difusion de un producto es...",
+    options: ["El proceso de comunicacion para dar a conocer su existencia, caracteristicas, usos y ventas.", "La proteccion legal del signo distintivo.", "La fase de retirada de canales.", "La suma de productos de una cartera."],
+    correct: 0,
+    explanation: "Difusion es comunicar la existencia y caracteristicas del producto al mercado."
+  },
+  {
+    type: "vf",
+    topic: "Proceso de adopcion",
+    question: "En la etapa de conciencia se sabe que el producto existe, pero se carece de informacion.",
+    options: ["Verdadero", "Falso"],
+    correct: 0,
+    explanation: "Conciencia significa ser consciente de la existencia del producto, todavia con poca informacion."
+  },
+  {
+    type: "multi",
+    topic: "Proceso de adopcion",
+    question: "En la etapa de prueba, el comprador...",
+    options: ["Realiza una prueba a pequena escala para calcular mejor su valor.", "Registra la marca por diez anos.", "Elimina la cartera de productos.", "Define el imagotipo de la marca."],
+    correct: 0,
+    explanation: "La prueba permite experimentar en pequena escala antes de adoptar de forma regular."
+  },
+  {
+    type: "vf",
+    topic: "Proceso de adopcion",
+    question: "La compatibilidad con habitos y valores del consumidor puede acelerar o frenar la adopcion.",
+    options: ["Verdadero", "Falso"],
+    correct: 0,
+    explanation: "El temario incluye compatibilidad, adaptabilidad e integracion como factores de adopcion."
+  }
+];
+
+const allQuestions = [...questionBank, ...extraQuestions].map((question, index) => ({
+  ...question,
+  id: `q-${index + 1}`
+}));
+
+const topicNotes = {
+  "Atributos del producto": "Resumen: producto no es solo objeto fisico; es una solucion formada por atributos tangibles e intangibles que el cliente valora.",
+  "Dimensiones del producto": "Resumen: Kotler mira el producto como basico, ampliado y total; Levitt lo desarrolla como generico, esperado, aumentado y potencial.",
+  "Clases de productos": "Resumen: distingue bienes de consumo, industriales e intangibles; la clave suele estar en quien compra y cuanto esfuerzo exige la compra.",
+  "Gama y linea": "Resumen: la gama es la cartera completa y la linea agrupa productos relacionados; sirve para alcance, riesgo, productividad y posicionamiento.",
+  "Diferenciacion": "Resumen: diferenciar es hacer que un atributo valioso sea percibido como unico por el comprador, idealmente con un foco claro.",
+  "Marca": "Resumen: la marca identifica y diferencia; combina nombre, parte visual, valores, recuerdo y estrategia a largo plazo.",
+  "Postventa": "Resumen: la venta no termina al cobrar; la postventa fideliza, diferencia y mantiene viva la relacion con el cliente.",
+  "Naming": "Resumen: naming es crear un nombre coherente, distintivo, evocador, facil de recordar y registrable.",
+  "Branding": "Resumen: branding traslada la marca al plano visual y de gestion, cuidando coherencia, recuerdo, apariencia y adaptabilidad.",
+  "Registro y proteccion": "Resumen: registrar protege la marca en un territorio y clase concreta; prioridad, renovacion y oposiciones son claves.",
+  "Ciclo de vida": "Resumen: introduccion, crecimiento, madurez y declive marcan ventas, costes, beneficios y decisiones comerciales.",
+  "Proceso de adopcion": "Resumen: el cliente pasa por conciencia, interes, evaluacion, prueba y adopcion; la rapidez depende del riesgo y encaje percibido."
+};
+
+const SAVE_KEY = "productMixQuizProgressV2";
+
 const state = {
-  questions: prepareQuestions(questionBank),
+  questions: [],
   current: 0,
   answers: new Map(),
-  filter: "all"
+  filter: "all",
+  topicFilter: "all",
+  mode: "practice"
 };
 
 const els = {
   totalQuestions: document.querySelector("#totalQuestions"),
   progressText: document.querySelector("#progressText"),
   scoreText: document.querySelector("#scoreText"),
+  answeredText: document.querySelector("#answeredText"),
+  pendingText: document.querySelector("#pendingText"),
+  modeLabel: document.querySelector("#modeLabel"),
   progressFill: document.querySelector("#progressFill"),
   questionTopic: document.querySelector("#questionTopic"),
   questionType: document.querySelector("#questionType"),
@@ -441,11 +735,15 @@ const els = {
   feedback: document.querySelector("#feedback"),
   feedbackTitle: document.querySelector("#feedbackTitle"),
   feedbackText: document.querySelector("#feedbackText"),
+  feedbackStudy: document.querySelector("#feedbackStudy"),
   prevBtn: document.querySelector("#prevBtn"),
   nextBtn: document.querySelector("#nextBtn"),
   startBtn: document.querySelector("#startBtn"),
   shuffleBtn: document.querySelector("#shuffleBtn"),
+  clearProgressBtn: document.querySelector("#clearProgressBtn"),
   filters: document.querySelectorAll(".filter"),
+  modeButtons: document.querySelectorAll(".mode-btn"),
+  topicFilters: document.querySelector("#topicFilters"),
   resultCard: document.querySelector("#resultCard"),
   rightCount: document.querySelector("#rightCount"),
   wrongCount: document.querySelector("#wrongCount"),
@@ -478,28 +776,83 @@ function prepareQuestions(questions) {
   });
 }
 
+function getFilteredSource() {
+  return allQuestions.filter((question) => {
+    const typeMatches = state.filter === "all" || question.type === state.filter;
+    const topicMatches = state.topicFilter === "all" || question.topic === state.topicFilter;
+    return typeMatches && topicMatches;
+  });
+}
+
+function applyCurrentFilters({ keepAnswers = false } = {}) {
+  const source = getFilteredSource();
+  state.questions = prepareQuestions(source);
+  state.current = Math.min(state.current, Math.max(state.questions.length - 1, 0));
+
+  if (!keepAnswers) {
+    state.current = 0;
+    state.answers.clear();
+  }
+
+  els.resultCard.hidden = true;
+  updateActiveControls();
+  saveProgress();
+  render();
+}
+
 function applyFilter(filter) {
   state.filter = filter;
-  state.current = 0;
-  state.answers.clear();
-  const filteredQuestions = filter === "all"
-    ? questionBank
-    : questionBank.filter((question) => question.type === filter);
-  state.questions = prepareQuestions(filteredQuestions);
-  els.filters.forEach((button) => button.classList.toggle("is-active", button.dataset.filter === filter));
-  els.resultCard.hidden = true;
+  applyCurrentFilters();
+}
+
+function applyTopicFilter(topic) {
+  state.topicFilter = topic;
+  applyCurrentFilters();
+}
+
+function setMode(mode) {
+  state.mode = mode;
+  updateActiveControls();
+  saveProgress();
   render();
+}
+
+function updateActiveControls() {
+  els.filters.forEach((button) => button.classList.toggle("is-active", button.dataset.filter === state.filter));
+  els.modeButtons.forEach((button) => button.classList.toggle("is-active", button.dataset.mode === state.mode));
+  document.querySelectorAll(".topic-btn").forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.topic === state.topicFilter);
+  });
+}
+
+function buildTopicFilters() {
+  const topics = ["all", ...new Set(allQuestions.map((question) => question.topic))];
+  els.topicFilters.innerHTML = "";
+
+  topics.forEach((topic) => {
+    const button = document.createElement("button");
+    button.className = "topic-btn";
+    button.type = "button";
+    button.dataset.topic = topic;
+    button.textContent = topic === "all" ? "Todos los temas" : topic;
+    button.addEventListener("click", () => applyTopicFilter(topic));
+    els.topicFilters.appendChild(button);
+  });
 }
 
 function render() {
   const total = state.questions.length;
   const question = state.questions[state.current];
-  const answered = state.answers.get(state.current);
-  const right = getScore().right;
+  const answered = state.answers.get(question.id);
+  const { right, answeredCount } = getScore();
+  const pending = total - answeredCount;
 
   els.totalQuestions.textContent = total;
   els.progressText.textContent = `Pregunta ${state.current + 1} de ${total}`;
-  els.scoreText.textContent = `${right} aciertos`;
+  els.scoreText.textContent = state.mode === "exam" ? "Sin corregir" : `${right} aciertos`;
+  els.answeredText.textContent = `${answeredCount} respondidas`;
+  els.pendingText.textContent = `${pending} pendientes`;
+  els.modeLabel.textContent = state.mode === "exam" ? "Examen" : "Practica";
   els.progressFill.style.width = `${((state.current + 1) / total) * 100}%`;
   els.questionTopic.textContent = question.topic;
   els.questionType.textContent = question.type === "vf" ? "Verdadero / Falso" : "4 opciones";
@@ -511,9 +864,13 @@ function render() {
     button.className = "answer";
     button.type = "button";
     button.textContent = option.text;
-    button.disabled = answered !== undefined;
+    button.disabled = state.mode === "practice" && answered !== undefined;
 
-    if (answered !== undefined) {
+    if (state.mode === "exam" && answered === option.originalIndex) {
+      button.classList.add("is-selected");
+    }
+
+    if (state.mode === "practice" && answered !== undefined) {
       if (option.originalIndex === question.correct) button.classList.add("is-correct");
       if (option.originalIndex === answered && answered !== question.correct) button.classList.add("is-wrong");
     }
@@ -522,11 +879,17 @@ function render() {
     els.answers.appendChild(button);
   });
 
+  els.feedback.classList.toggle("is-exam", state.mode === "exam");
   els.feedback.hidden = answered === undefined;
-  if (answered !== undefined) {
+  els.feedbackStudy.textContent = "";
+  if (answered !== undefined && state.mode === "practice") {
     const isCorrect = answered === question.correct;
     els.feedbackTitle.textContent = isCorrect ? "Correcto" : "Incorrecto";
     els.feedbackText.textContent = question.explanation;
+    els.feedbackStudy.textContent = topicNotes[question.topic] || "";
+  } else if (answered !== undefined) {
+    els.feedbackTitle.textContent = "Respuesta guardada";
+    els.feedbackText.textContent = "En modo examen no se muestra la correccion hasta terminar.";
   }
 
   els.prevBtn.disabled = state.current === 0;
@@ -534,28 +897,31 @@ function render() {
 }
 
 function selectAnswer(index) {
-  state.answers.set(state.current, index);
+  const question = state.questions[state.current];
+  state.answers.set(question.id, index);
+  saveProgress();
   render();
 }
 
 function getScore() {
   let right = 0;
   let wrong = 0;
+  let answeredCount = 0;
 
   state.questions.forEach((question, index) => {
-    const selected = state.answers.get(index);
+    const selected = state.answers.get(question.id);
     if (selected === undefined) return;
+    answeredCount += 1;
     if (selected === question.correct) right += 1;
     else wrong += 1;
   });
 
-  return { right, wrong };
+  return { right, wrong, answeredCount };
 }
 
 function showResults() {
-  const { right, wrong } = getScore();
-  const totalAnswered = right + wrong;
-  const pending = state.questions.length - totalAnswered;
+  const { right, wrong, answeredCount } = getScore();
+  const pending = state.questions.length - answeredCount;
   const percent = Math.round((right / state.questions.length) * 100);
 
   els.rightCount.textContent = right;
@@ -573,6 +939,7 @@ function showResults() {
 
   els.resultCard.hidden = false;
   renderWrongReview();
+  saveProgress();
   els.resultCard.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
@@ -581,7 +948,7 @@ function getWrongQuestions() {
     .map((question, index) => ({
       number: index + 1,
       question,
-      selected: state.answers.get(index)
+      selected: state.answers.get(question.id)
     }))
     .filter((item) => item.selected !== item.question.correct);
 }
@@ -607,6 +974,7 @@ function renderWrongReview() {
         <span><b>Tu respuesta:</b> <span class="bad">${selectedText}</span></span>
         <span><b>Correcta:</b> <span class="good">${correctText}</span></span>
         <span>${item.question.explanation}</span>
+        <span>${topicNotes[item.question.topic] || ""}</span>
       </div>
     `;
     els.wrongList.appendChild(article);
@@ -616,6 +984,7 @@ function renderWrongReview() {
 function nextQuestion() {
   if (state.current < state.questions.length - 1) {
     state.current += 1;
+    saveProgress();
     render();
     return;
   }
@@ -625,17 +994,20 @@ function nextQuestion() {
 function previousQuestion() {
   if (state.current > 0) {
     state.current -= 1;
+    saveProgress();
     render();
   }
 }
 
-function restart(questions = questionBank, filter = "all") {
+function restart(questions = allQuestions, filter = "all", topicFilter = "all") {
   state.questions = prepareQuestions(questions);
   state.current = 0;
   state.answers.clear();
   state.filter = filter;
-  els.filters.forEach((button) => button.classList.toggle("is-active", button.dataset.filter === filter));
+  state.topicFilter = topicFilter;
   els.resultCard.hidden = true;
+  updateActiveControls();
+  saveProgress();
   render();
   document.querySelector("#quizCard").scrollIntoView({ behavior: "smooth", block: "start" });
 }
@@ -647,12 +1019,55 @@ function retryWrong() {
   restart(wrongQuestions);
 }
 
+function saveProgress() {
+  const payload = {
+    current: state.current,
+    filter: state.filter,
+    topicFilter: state.topicFilter,
+    mode: state.mode,
+    answers: Object.fromEntries(state.answers)
+  };
+  localStorage.setItem(SAVE_KEY, JSON.stringify(payload));
+}
+
+function loadProgress() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(SAVE_KEY));
+    if (!saved) return;
+
+    state.current = Number.isInteger(saved.current) ? saved.current : 0;
+    state.filter = saved.filter || "all";
+    state.topicFilter = saved.topicFilter || "all";
+    state.mode = saved.mode || "practice";
+    state.answers = new Map(Object.entries(saved.answers || {}).map(([key, value]) => [key, Number(value)]));
+  } catch (error) {
+    localStorage.removeItem(SAVE_KEY);
+  }
+}
+
+function clearProgress() {
+  localStorage.removeItem(SAVE_KEY);
+  state.mode = "practice";
+  restart(allQuestions);
+}
+
+function init() {
+  buildTopicFilters();
+  loadProgress();
+  state.questions = prepareQuestions(getFilteredSource());
+  state.current = Math.min(state.current, Math.max(state.questions.length - 1, 0));
+  updateActiveControls();
+  render();
+}
+
 els.nextBtn.addEventListener("click", nextQuestion);
 els.prevBtn.addEventListener("click", previousQuestion);
 els.startBtn.addEventListener("click", () => document.querySelector("#quizCard").scrollIntoView({ behavior: "smooth", block: "start" }));
-els.shuffleBtn.addEventListener("click", () => restart(shuffle(state.questions), state.filter));
-els.restartBtn.addEventListener("click", () => restart(questionBank));
+els.shuffleBtn.addEventListener("click", () => restart(shuffle(state.questions), state.filter, state.topicFilter));
+els.restartBtn.addEventListener("click", () => restart(getFilteredSource(), state.filter, state.topicFilter));
 els.retryWrongBtn.addEventListener("click", retryWrong);
+els.clearProgressBtn.addEventListener("click", clearProgress);
 els.filters.forEach((button) => button.addEventListener("click", () => applyFilter(button.dataset.filter)));
+els.modeButtons.forEach((button) => button.addEventListener("click", () => setMode(button.dataset.mode)));
 
-render();
+init();

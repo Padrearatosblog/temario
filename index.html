@@ -30,7 +30,8 @@
         <div class="mini-stats">
           <span>V/F</span>
           <span>4 opciones</span>
-          <span>Correccion inmediata</span>
+          <span>Modo examen</span>
+          <span>Guardado automatico</span>
         </div>
       </aside>
     </section>
@@ -44,13 +45,33 @@
         <div class="progress-bar" aria-hidden="true">
           <span id="progressFill"></span>
         </div>
+        <div class="progress-details">
+          <span id="answeredText">0 respondidas</span>
+          <span id="pendingText">0 pendientes</span>
+          <span id="modeLabel">Practica</span>
+        </div>
       </div>
 
-      <div class="filters" role="group" aria-label="Tipo de preguntas">
-        <button class="filter is-active" data-filter="all" type="button">Todo</button>
-        <button class="filter" data-filter="vf" type="button">V/F</button>
-        <button class="filter" data-filter="multi" type="button">4 opciones</button>
+      <div class="controls-stack">
+        <div class="mode-switch" role="group" aria-label="Modo de test">
+          <button class="mode-btn is-active" data-mode="practice" type="button">Practica</button>
+          <button class="mode-btn" data-mode="exam" type="button">Examen</button>
+        </div>
+
+        <div class="filters" role="group" aria-label="Tipo de preguntas">
+          <button class="filter is-active" data-filter="all" type="button">Todo</button>
+          <button class="filter" data-filter="vf" type="button">V/F</button>
+          <button class="filter" data-filter="multi" type="button">4 opciones</button>
+        </div>
       </div>
+    </section>
+
+    <section class="topic-panel" aria-label="Temas del temario">
+      <div class="section-head">
+        <span class="eyebrow">Practicar por tema</span>
+        <button class="text-btn" id="clearProgressBtn" type="button">Borrar progreso</button>
+      </div>
+      <div class="topic-filters" id="topicFilters"></div>
     </section>
 
     <section class="quiz-card" id="quizCard" aria-live="polite">
@@ -66,6 +87,7 @@
       <div class="feedback" id="feedback" hidden>
         <strong id="feedbackTitle"></strong>
         <p id="feedbackText"></p>
+        <small id="feedbackStudy"></small>
       </div>
 
       <div class="nav-row">
